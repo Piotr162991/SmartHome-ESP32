@@ -16,7 +16,7 @@ const char* password = "pokoj123";
 #define TEMT6000 34
 #define DHTTYPE DHT22 
 
-/*WiFiUDP ntpUDP;
+WiFiUDP ntpUDP;
 
 #define NTP_OFFSET  3600  
 
@@ -24,7 +24,7 @@ const char* password = "pokoj123";
 
 #define NTP_ADDRESS  "tempus1.gum.gov.pl"
 
-NTPClient timeClient(ntpUDP, NTP_ADDRESS, NTP_OFFSET, NTP_INTERVAL);*/
+NTPClient timeClient(ntpUDP, NTP_ADDRESS, NTP_OFFSET, NTP_INTERVAL);
 
 
 
@@ -89,11 +89,11 @@ void ruch_mes(){
     
 
 }
-/*void czas(){
+void czas(){
   timeClient.update();
   formattedTime = timeClient.getFormattedTime();
   godzina = timeClient.getHours();
-}*/
+}
 
 
 void audio_mes(){
@@ -121,7 +121,7 @@ else{
 
 
 }
-/*void autom2(){
+void autom2(){
   czaszapalania=20;
   czas();
   if(godzina==czaszapalania)
