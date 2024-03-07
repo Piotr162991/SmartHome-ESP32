@@ -9,8 +9,8 @@
 #include <WiFiUdp.h>
 
 
-const char* ssid = "pokoj123";
-const char* password = "pokoj123";
+const char* ssid = "network name";
+const char* password = "password";
 
 #define DHTPIN 4  
 #define TEMT6000 34
